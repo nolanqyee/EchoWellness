@@ -1,4 +1,4 @@
-@import url(/styles/variables.css);
+@import url(styles/variables.css);
 
 .gap {
     height: 10vh;
@@ -6,7 +6,7 @@
 
 #concertHeader{
     height: 70vh;
-    background-image: url(/assets/concert/cover.jpg);
+    background-image: url(assets/concert/cover.jpg);
     background-size: cover;
     background-position: center;
     background-attachment:scroll;
