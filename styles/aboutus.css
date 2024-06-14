@@ -1,16 +1,8 @@
-:root {
-    --primary: #c0d6df;
-    --accent: #589fbb;
-    --dark: #2e3034;
-    --light: #fafafa;
-    --special: #e6a314;
-    --border: #dee0e4;
-}
-
+@import url("../styles/variables.css");
 
 #aboutHeader{
     height: 70vh;
-    background-image: url(assets/concert/cover2.jpg);
+    background-image: url("../assets/concert/cover2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment:scroll;
