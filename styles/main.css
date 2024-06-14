@@ -1,0 +1,143 @@
+@import url(/styles/variables.css);
+
+html {
+    font-family: 'Poppins';
+}
+
+body {
+    font-family: 'Poppins';
+    color:var(--dark);
+    margin:0;
+    background:var(--light);
+    height: 100%;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.gap{
+    height: 20vh;
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    border-bottom: 2px solid var(--border);
+    background-color: var(--light);
+    backdrop-filter: blur(8px);
+    padding-left: 40px;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 1.5em;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color:var(--dark);
+    margin:0;
+}
+.logo img{
+    height: 38px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#navbar div{
+    width: fit-content;
+    margin-right: 40px;
+}
+
+#navbar .nav-link, .nav-link, a{
+    text-decoration: none;
+    color:var(--dark);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 25px;
+    opacity: .8;
+    transition: .25s;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins';
+}
+
+#navbar .nav-link:hover, .logo:hover{
+    transform:translate(0,-2px);
+    opacity: 1;
+}
+
+/* FOOTER */
+
+#footer{
+    background:var(--dark);
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+
+#footerContent{
+    width: 80%;
+    margin: auto;
+}
+
+#footer p{
+    color: var(--light);
+    line-height: 1;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+/* HOMEPAGE */
+#landingSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(90%, 600px);
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom:50px;
+}
+
+#landingSection div h1{
+    font-family: 'Montserrat';
+    font-size: min(100px,7vw);
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom:30px;
+}
+
+#landingSection div p {
+    font-size: 20px;
+    margin:0;
+    opacity: .6;
+}
+
+#landingSection div a {
+    font-size: 20px;
+    margin:0;
+    opacity: .7;
+    text-decoration: underline;
+}
+
+#landingSection img {
+    width: 300px;
+    display: flex;
+    align-self: right;
+    margin-left: 80px;
+}
+

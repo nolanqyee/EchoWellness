@@ -1,0 +1,107 @@
+@import url(/styles/variables.css);
+
+.gap {
+    height: 10vh;
+}
+
+#concertHeader{
+    height: 70vh;
+    background-image: url(/assets/concert/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+#concertHeader div h1 {
+    font-family: 'Montserrat';
+    font-size: min(100px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--light);
+    margin-bottom:30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#concertHeader div p {
+    color: var(--light);
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.concertContent{
+    padding: 20px;
+}
+
+.concertContent div {
+    margin: auto;
+    width: max(80%, 800px);
+}
+
+.concertContent div h1 {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom:30px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.concertContent div p {
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+.concertContent div a {
+    color: var(--accent);
+    font-size: 20px;
+    margin:0;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+#imageCarousel {
+    width: max(80%, 800px);
+    margin: auto;
+}
+
+#imageCarousel h1 {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom:30px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+#imageCarousel p {
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+#imageCarousel a {
+    color: var(--accent);
+    font-size: 20px;
+    margin:0;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.concert-photos {
+    margin-top: 7vh;
+}

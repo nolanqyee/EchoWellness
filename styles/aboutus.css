@@ -1,0 +1,195 @@
+@import url(/styles/variables.css);
+
+#aboutHeader{
+    height: 70vh;
+    background-image: url(/assets/concert/cover2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+#aboutHeader div h1{
+    font-family: 'Montserrat';
+    font-size: min(100px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--light);
+    margin-bottom:30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#aboutHeader div p {
+    color: var(--light);
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.aboutContent {
+    padding: 20px;
+}
+
+.aboutContent div {
+    margin: auto;
+    width: max(80%, 800px);
+}
+
+
+.aboutContent div h1 {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom:30px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.aboutContent div p {
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+.aboutContent div a {
+    color: var(--accent);
+    font-size: 20px;
+    margin:0;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px; 
+}
+
+.grid-item {
+    text-align: center;
+    border: 3px solid var(--border);
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    -webkit-transition: -webkit-transform 0.25s ease, border-color 0.25s ease;
+}
+
+.grid-item:hover{
+    transform: translate(0,-3px);
+    border-color: var(--accent);
+}
+
+.grid-item img {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--dark);
+    opacity: 0.8;
+}
+@keyframes fadeEffect {
+    from {
+      opacity: 0.7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+/* Modal Styles */
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    animation: fadeEffect 0.2s;
+}
+
+.modal-content {
+    background-color: var(--light);
+    margin: auto;
+    padding: 20px;
+    border: 3px solid var(--primary);
+    border-radius: 10px;
+    max-width: 60%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.modal-column {
+    padding: 10px;
+}
+
+.modal-column-left {
+    flex: 1; /* Adjust width ratio for left column */
+}
+
+.modal-column-right {
+    flex: 2; /* Adjust width ratio for right column */
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.modal-bio {
+    margin-top: 10px;
+    color: var(--dark);
+    opacity: 0.7;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.modal-bio-pre {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+.modal-bio-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent);
+    font-family: 'Montserrat';
+}
