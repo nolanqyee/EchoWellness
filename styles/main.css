@@ -1,4 +1,12 @@
-@import url(styles/variables.css);
+:root {
+    --primary: #c0d6df;
+    --accent: #589fbb;
+    --dark: #2e3034;
+    --light: #fafafa;
+    --special: #e6a314;
+    --border: #dee0e4;
+}
+
 
 html {
     font-family: 'Poppins';
