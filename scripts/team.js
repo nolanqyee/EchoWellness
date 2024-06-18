@@ -40,7 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Brenna Ren is a junior at The Harker School. She is interested in computer science, robotics, and research. Brenna hopes to use her skills in music and art along with her STEM abilities to foster a more accessible and equitable world. In her free time, she enjoys baking and solving puzzles.",
                 "Grayson Hou is a rising senior at Shady Side Academy in Pittsburgh, where he excels academically with a keen interest in biology and history. Outside the classroom, Grayson is a dedicated athlete, actively participating in basketball and competitive swimming, and a photographer. Grayson aims to help people and communities through research and various other initiatives, demonstrating his commitment to making a positive impact in the world.",
                 "Mujun Xu is a freshman at Round Rock High School. He likes to study biology and engineering. In his free time, he likes to swim and play tennis.",
-                "Michael Hu is a Sophomore at St.John XXIII College Preparatory and enjoys Math and Science the most. He is new to the English language and works hard towards becoming proficient like his native peers. For college, he is currently unsure which path to pursue but is certain that some type of Engineering will be in his future."
+                "Michael Hu is a Sophomore at St.John XXIII College Preparatory and enjoys Math and Science the most. He is new to the English language and works hard towards becoming proficient like his native peers. For college, he is currently unsure which path to pursue but is certain that some type of Engineering will be in his future.",
+                "Tom Wang is an upcoming junior at The Woodland High School. He enjoys subjects like math and chemistry. Using his skill of collaborating and understanding, he is willing to help the organization become better and more successful. Baking is one of his interest, and he wants to use the skill of baking to help those that are in need.",
+                "Emma Zeng is a Junior at Choate Rosemary Hall. In school, she loves studying physics and biology. Out of school, she partakes in cross country running, swimming, and dance. Through her passion in academics and athletics she continues to contribute and impact her school and community.",
+                "Emily Ma",
+                "Meng Yuan"
             ];
             const bio = bios[index];
 
