@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const imgSrc = item.querySelector('img').getAttribute('src');
             const caption = item.querySelector('.caption').textContent;
             const bios = [
-                "Suri",
+                "Suri Yang is the President of the EchoWellness Organization. Having served as President for three years now, and a strong advocate of student civic engagement, Suri strives to bring students to give back to their communities. Whether it is through a volunteering activity to hosting a fundraising concert, she is here to make positive change happen. She is currently serving on the board of 5 student run and led organizations to promote youth civic participation.",
                 "Nolan Yee is a senior at James E. Taylor High School with passions for the intersection between technology and the arts. He loves to spend his time exploring his interests in AI, music, and supporting the Houston Rockets.",
                 "Tristan Yuen is a Junior at Cistercian Preparatory School. He loves studying biology and psychology. However, he is not just well-versed in the sciences. Led by his passion to serve, he uses his talents in music and academics to help make a positive impact on the world, whether it is through tutoring, performing, or research.",
                 "Chloe Lu is a freshman at James E. Taylor High School. She is interested in humanitarian subjects, languages, and the arts. Aside from academics, she loves to spend her time reading, painting, and finding new ways to contribute positively to her community through volunteering services.",
