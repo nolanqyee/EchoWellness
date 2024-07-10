@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Michael Hu is a Sophomore at St.John XXIII College Preparatory and enjoys Math and Science the most. He is new to the English language and works hard towards becoming proficient like his native peers. For college, he is currently unsure which path to pursue but is certain that some type of Engineering will be in his future.",
                 "Tom Wang is an upcoming junior at The Woodland High School. He enjoys subjects like math and chemistry. Using his skill of collaborating and understanding, he is willing to help the organization become better and more successful. Baking is one of his interest, and he wants to use the skill of baking to help those that are in need.",
                 "Emma Zeng is a Junior at Choate Rosemary Hall. In school, she loves studying physics and biology. Out of school, she partakes in cross country running, swimming, and dance. Through her passion in academics and athletics she continues to contribute and impact her school and community.",
-                "Emily Ma",
+                "Emily Ma is a senior at Choate Rosemary Hall this year. In school, she is most interested in her Anatomy and Physiology class and is thinking about pursuing a career in dermatology. Outside of school, she has been dancing her whole life and is looking forward to contribute to the performance to help the fundraising cause.",
                 "Meng Yuan"
             ];
             const bio = bios[index];
