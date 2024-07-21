@@ -87,15 +87,17 @@
 
 #missionImageDiv {
     width: 40%;
+    max-height: 400px;
+    overflow: hidden;
 }
 
 #missionImage {
     width: 100%;
-    max-height: 350px;
+    height: auto;
 }
 
 #missionText {
-    width: 55%;
+    width: 50%;
     margin-left: 4vw;
 }
 
@@ -185,15 +187,17 @@
 
 #thisYearImageDiv {
     width: 40%;
+    max-height: 400px;
+    overflow: hidden;
 }
 
 #thisYearImage {
     width: 100%;
-    max-height: 350px;
+    height: auto;
 }
 
 #thisYearText {
-    width: 55%;
+    width: 50%;
     margin-right: 4vw;
 }
 
@@ -221,7 +225,7 @@
     border: 1px solid var(--border);
     text-align: center;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     cursor: pointer;
     color: var(--light);
