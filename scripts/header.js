@@ -13,7 +13,7 @@ function changeImage() {
 
     setTimeout(() => {
         currentIndex = (currentIndex + 1) % images.length;
-        imgElement.src = '../assets/index/' + images[currentIndex];
+        imgElement.src = 'assets/index/' + images[currentIndex];
         imgElement.onload = () => {
             imgElement.classList.remove('fade-out');
         };}, 500);
