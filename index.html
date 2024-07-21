@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | EchoWellness</title>
     <link rel="stylesheet" href="styles/main.css">
-    
+    <link rel="stylesheet" href="styles/index.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <link rel="icon" href="assets/branding/lightlogo.png">
@@ -27,19 +31,78 @@
         </div>
     </div>
     
-
-    <div id="landingSection">
-        <div>
-            <h1>Welcome to <span class='accent'>EchoWellness!</span></h1>
-            <p>This homepage is currently under construction. In the meantime, feel free to visit our <a href="#" onclick="navigateTo('concert')">concert</a> and <a href="#" onclick="navigateTo('aboutus')">about</a> pages for more information on our organization.</p>
+    <div data-aos="fade-in" data-aos-duration="700">
+        <!-- HEADER SECTION -->
+        <div id="indexHeader">
+            <div id="indexHeaderContent">
+                <div id="indexHeaderText">
+                    <h1>Welcome to <span class='glow'>EchoWellness!</span></h1>
+                    <p>This homepage is currently under construction. In the meantime, feel free to visit our <a href="#" onclick="navigateTo('concert')">concert</a> and <a href="#" onclick="navigateTo('aboutus')">about</a> pages for more information on our organization.</p>
+                </div>
+                <div id="indexHeaderImage">
+                    <img id="indexImage" src="../assets/index/suriHead.jpg">
+                </div>
+            </div>
         </div>
-        <!-- not sure about this graphic yet -->
-        <img src="assets/building.png">
+
+        <div style="height: 10vh;"></div>
+        
+        <!-- MISSION STATEMENT -->
+
+        <div id="mission" >
+            <div id="missionImageDiv" data-aos="zoom-in-right" data-aos-duration="800">
+                <!-- update this with that one picture -->
+                <img src="../assets/index/missionImage.jpg" id="missionImage">
+            </div>
+            <div id="missionText" data-aos="fade-right" data-aos-duration="800">
+                <h1>Our <span class="accent">Mission</span></h1>
+                <p>At EchoWellness, our mission is to provide a positive and uplifting environment for our peers. We believe that even across long distances, there are always opportunities for building meaningful relationships and preserving one's overall wellness. Through innovative approaches, we aim to raise awareness about the importance of mental and physical wellbeing. Together, we hope to create a stronger, more resilient community among those who have faced obstacles across the world.</p>
+            </div>
+        </div>
+
+        <div style="height: 18vh;"></div>
+
+        <!-- IMPACT -->
+        <div id="impact">
+            <h1 id="impactHeading" data-aos="fade-down" data-aos-duration="800">Our <span class="accent">Impact</span></h1> <!--centered-->
+            <div id="statSection" data-aos="fade-up" data-aos-duration="800">
+                <div class="stat">
+                    <h1 class="statHead">$14K+</h1>
+                    <p class="statCaption">raised for a local special needs school in 2023</p>
+                </div>
+                <div class="stat">
+                    <h1 class="statHead">33</h1>
+                    <p class="statCaption">current members</p>
+                </div>
+                <div class="stat">
+                    <h1 class="statHead">5+</h1>
+                    <p class="statCaption">states with members</p>
+                </div>
+            </div>  
+        </div>
+
+        <div class="gap"></div>
+
+        <!-- THIS YEAR -->
+        <div id="thisYear">
+            <div id="thisYearText" data-aos="fade-left" data-aos-duration="800">
+                <h1>This Year's <span class="accent">Goals</span></h1>
+                <p>This year, EchoWellness is dedicating its fundraising efforts to support veterans, a cause close to our hearts. We recognize the immense sacrifices made by these brave men and women, and we are committed to giving back to those who have served our country. The proceeds from our fundraising initiatives will be donated to the impactful organizations Purple Heart Homes and Veterans of Foreign Wars.</p>
+                <p>Your support is appreciated!</p>
+                <a> <!--add the givebutter link-->
+                    <button id="donationButton" >Donate here!</button>
+                </a>
+            </div>
+            <div id="thisYearImageDiv" data-aos="zoom-in-left" data-aos-duration="800">
+                <!-- update this with patriotic image -->
+                <img src="../assets/index/thisYearImage.jpg" id="thisYearImage">
+            </div>
+        </div>
+
+        <div class="gap"></div>
     </div>
 
-    <div class="pageContent"></div>
 
-    <div class="gap"></div>
 
     <!-- FOOTER -->
     <div id="footer">
@@ -54,4 +117,9 @@
 </body>
 
 <script src="scripts/dualhost.js"></script>
+<script src="scripts/header.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>

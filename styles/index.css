@@ -1,0 +1,240 @@
+@import url("variables.css");
+
+#indexHeader{
+    height: 70vh;
+    background-image: url("../assets/index/indexCover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom:50px;
+}
+
+#indexHeaderContent {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+
+#indexHeaderText {
+    width: max(60%, 600px);
+    margin-right: 3vw;
+}
+
+#indexHeaderImage {
+    max-width: 40%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#indexImage {
+    height: 55vh;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(250,250,250,0.4);
+    transition: opacity 0.7s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+#indexHeader div h1 {
+    font-family: 'Montserrat';
+    font-size: min(100px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--light);
+    margin: auto;
+    margin-bottom:20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#indexHeader div p {
+    color: var(--light);
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#indexHeader div a {
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 600;
+    margin:0;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+/* MISSION SECTION */
+
+#mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+#missionImageDiv {
+    width: 40%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#missionImage {
+    width: 100%;
+    height: auto;
+}
+
+#missionText {
+    width: 50%;
+    margin-left: 4vw;
+}
+
+#missionText h1 {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+#missionText p {
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+/* IMPACT SECTION */
+
+#impact {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#impactHeading {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+#statSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.stat {
+    text-align: center;
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    margin: 0px 10px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    -webkit-transition: -webkit-transform 0.25s ease, border-color 0.25s ease;
+}
+
+.stat:hover{
+    transform: translate(0,-3px);
+    border-color: var(--accent);
+}
+
+
+.statHead {
+    font-size: 6vw;
+    font-weight: 600;
+    margin: 25px 5px 0px 5px;
+    line-height: 1;
+}
+
+.statCaption {
+    font-size: 100%;
+    font-weight: 600;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+/* THIS YEAR SECTION */
+
+#thisYear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+#thisYearImageDiv {
+    width: 40%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#thisYearImage {
+    width: 100%;
+    height: auto;
+}
+
+#thisYearText {
+    width: 50%;
+    margin-right: 4vw;
+}
+
+#thisYearText h1 {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+#thisYearText p {
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+#donationButton {
+    background-color: var(--accent);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--light);
+    font-weight: 600;
+    margin-top: 5px;
+    padding: 10px;
+    transition: 0.25s ease;
+}
+
+#donationButton:hover{
+    transform: translateY(-3px);
+}
