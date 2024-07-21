@@ -29,6 +29,10 @@ body {
     height: 20vh;
 }
 
+.smallGap {
+    height: 10vh;
+}
+
 /* scrollbar */
 
 /* width */

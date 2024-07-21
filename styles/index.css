@@ -74,3 +74,163 @@
     margin-bottom: 5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
+
+/* MISSION SECTION */
+
+#mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+#missionImageDiv {
+    width: 40%;
+}
+
+#missionImage {
+    width: 100%;
+    max-height: 350px;
+}
+
+#missionText {
+    width: 55%;
+    margin-left: 4vw;
+}
+
+#missionText h1 {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+#missionText p {
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+/* IMPACT SECTION */
+
+#impact {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#impactHeading {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+#statSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.stat {
+    text-align: center;
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    margin: 0px 10px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    -webkit-transition: -webkit-transform 0.25s ease, border-color 0.25s ease;
+}
+
+.stat:hover{
+    transform: translate(0,-3px);
+    border-color: var(--accent);
+}
+
+
+.statHead {
+    font-size: 6vw;
+    font-weight: 600;
+    margin: 25px 5px 0px 5px;
+    line-height: 1;
+}
+
+.statCaption {
+    font-size: 100%;
+    font-weight: 600;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+/* THIS YEAR SECTION */
+
+#thisYear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+#thisYearImageDiv {
+    width: 40%;
+}
+
+#thisYearImage {
+    width: 100%;
+    max-height: 350px;
+}
+
+#thisYearText {
+    width: 55%;
+    margin-right: 4vw;
+}
+
+#thisYearText h1 {
+    font-family: 'Montserrat';
+    font-size: min(60px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--dark);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+#thisYearText p {
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+#donationButton {
+    background-color: var(--accent);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--light);
+    font-weight: 600;
+    margin-top: 5px;
+    padding: 10px;
+    transition: 0.25s ease;
+}
+
+#donationButton:hover{
+    transform: translateY(-3px);
+}
