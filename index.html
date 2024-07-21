@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | EchoWellness</title>
     <link rel="stylesheet" href="styles/main.css">
-    
+    <link rel="stylesheet" href="styles/index.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,14 +28,16 @@
         </div>
     </div>
     
-
-    <div id="landingSection">
-        <div>
-            <h1>Welcome to <span class='accent'>EchoWellness!</span></h1>
-            <p>This homepage is currently under construction. In the meantime, feel free to visit our <a href="#" onclick="navigateTo('concert')">concert</a> and <a href="#" onclick="navigateTo('aboutus')">about</a> pages for more information on our organization.</p>
+    <div id="indexHeader">
+        <div id="indexHeaderContent">
+            <div id="indexHeaderText">
+                <h1>Welcome to <span class='glow'>EchoWellness!</span></h1>
+                <p>This homepage is currently under construction. In the meantime, feel free to visit our <a href="#" onclick="navigateTo('concert')">concert</a> and <a href="#" onclick="navigateTo('aboutus')">about</a> pages for more information on our organization.</p>
+            </div>
+            <div id="indexHeaderImage">
+                <img id="indexImage" src="../assets/index/suriHead.jpg">
+            </div>
         </div>
-        <!-- not sure about this graphic yet -->
-        <img src="assets/building.png">
     </div>
 
     <div class="pageContent"></div>
@@ -54,4 +57,5 @@
 </body>
 
 <script src="scripts/dualhost.js"></script>
+<script src="scripts/header.js"></script>
 </html>

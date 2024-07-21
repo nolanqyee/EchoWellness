@@ -16,6 +16,11 @@ body {
     color: var(--accent);
 }
 
+.glow {
+    color: var(--light);
+    text-shadow: 0 0 10px var(--primary), 0 0 15px var(--primary);
+}
+
 .bold {
     font-weight: 600;
 }
@@ -23,6 +28,26 @@ body {
 .gap{
     height: 20vh;
 }
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* background of scrollbar */
+::-webkit-scrollbar-track {
+    background: var(--border);
+}
+/* handle of scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #95cde4;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
 
 /* navbar */
 #navbar{
@@ -47,6 +72,7 @@ body {
     cursor: pointer;
     color:var(--dark);
     margin:0;
+    transition: .25s;
 }
 .logo img{
     height: 38px;
@@ -59,7 +85,7 @@ body {
     margin-right: 40px;
 }
 
-#navbar .nav-link, .nav-link, a{
+#navbar .nav-link, .nav-link {
     text-decoration: none;
     color:var(--dark);
     font-size: 18px;
