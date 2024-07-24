@@ -1,0 +1,78 @@
+@import url("variables.css");
+
+.gap {
+    height: 10vh;
+    display: inline-block
+}
+
+
+#contactHeader {
+
+    height: 70vh;
+    background-image: url("../assets/concert/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+#contactHeader div h1 {
+    font-family: 'Montserrat';
+    font-size: min(100px,7vw);
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--light);
+    margin-bottom:30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#contactHeader div p {
+    color: var(--light);
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#contactSocials {
+    
+    
+    margin-left: 80px;
+}
+
+.soc {
+    display: inline-block;
+}
+
+
+
+.linkage {
+    font-size: 20px;
+}
+
+.bigbold {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.social {
+    font-size: 20px;
+}
+
+.contact-form {
+    margin-left: 140px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+

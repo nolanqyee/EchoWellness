@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us! | EchoWellness</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contactus.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <script src="scripts/dualhost.js"></script>
 
     <link rel="icon" href="assets/branding/lightlogo.png">
 </head>
@@ -26,6 +27,39 @@
             <a class="nav-link" href="#" onclick="navigateTo('contactus')">Contact Us</a>
         </div>
     </div>
+
+    <div id="contactHeader">
+        <div>
+            <h1>Contact Us!</h1>
+            <p>We would love to hear your thoughts!</p>
+            <p>Feel free to send us an email below!</p>
+        </div>
+    </div>
+
+    <div class="gap"></div>
+
+    <div id="contactSocials" class="soc">
+        <p><span class="bigbold">Contact Us!</span></p>
+            <p><span class="bigbold">Phone:</span> <span class="social">(713) 853-6309</span> </p>
+            <p><span class="bigbold">Email:</span> <span class="social">echowellness.now@gmail.com</span></p>
+            <p><span class="bigbold">Instagram:</span> <a class="linkage" target="_blank" href="https://www.instagram.com/echowellness.now/?igshid=MzRlODBiNWFlZA%3D%3D">@echowellness.now</a></p>
+            <p><span class="bigbold">TikTok:</span> <a class="linkage" target="_blank" href="https://www.tiktok.com/@echowellness.now">@echowellness.now</a></p>
+    </div>
+
+    <section class="soc">
+    <div class = "contact-form">
+
+        <form action="formhandler.php" method = "post">
+            <input type="text" name="name" placeholder = "Enter your name" required>
+            <input type="email" name="email" placeholder = "Enter email address" required>
+            <input type="text" name="subject" placeholder = "Enter your subject" required>
+            <br>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type = "submit">Send Message</button>
+        </form>
+
+    </div>
+    </section>
 </body>
 
 </html>
