@@ -1,0 +1,100 @@
+@import url("variables.css");
+
+.gap {
+    height: 10vh;
+    display: inline-block
+}
+
+#contactDiv {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+#socials {
+    width: 50%;
+}
+#form {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 30px;
+}
+
+#contactDiv div h1 {
+    font-family: 'Montserrat';
+    font-size: 4.5vw;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0;
+}
+
+#contactDiv div p {
+    color: var(--dark);
+    opacity: 0.8;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    transition: 0.25s ease;
+}
+
+.contact-form input:hover, .contact-form textarea:hover {
+    transform: translateY(-3px);
+}
+
+#submission {
+    background-color: var(--accent);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--light);
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.25s ease;
+}
+
+#submission:hover {
+    transform: translateY(-3px);
+
+}
+
+@media only screen and (max-width: 950px) {
+    #contactDiv {
+        display: contents;
+    }
+    #socials {
+        margin: auto;
+        margin-top: 30px;
+        width: 85vw;
+    }
+    #form {
+        margin: auto;
+        width: 85vw;
+        margin-top: 30px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 80vw;
+        margin: 0;
+        margin-bottom: 17px;
+    }
+    #contactDiv div h1 {
+        font-size: 45px;
+    }
+}

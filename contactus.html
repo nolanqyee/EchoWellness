@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us! | EchoWellness</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contactus.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <script src="scripts/dualhost.js"></script>
+    <script src="scripts/navbar.js"></script>
+
     <link rel="icon" href="assets/branding/lightlogo.png">
 </head>
 
@@ -26,6 +28,53 @@
             <a class="nav-link" href="#" onclick="navigateTo('contactus')">Contact Us</a>
         </div>
     </div>
+    <!-- MOBILE NAVBAR -->
+    <div id="mobileNavbar">
+        <a class="logo" href="#" onclick="navigateTo('')"><img src="assets/branding/lightlogo2.png"></a>
+
+        <img id="burgerToggle" onclick="toggleBurgerMenu()" src="assets/menu.svg">
+    </div>
+
+    <div id="burgerMenu">
+        <a class="nav-link" href="#" onclick="navigateTo('concert')">Concert</a>
+        <a class="nav-link" href="#" onclick="navigateTo('aboutus')">About Us</a>
+        <a class="nav-link" href="#" onclick="navigateTo('contactus')">Contact Us</a>
+    </div>
+
+    <div id="contactDiv">
+        <div id="socials">
+            <h1>Contact Us!</h1>
+            <p>Feel free to send us an email, or contact us at any of the following socials:</p>
+            <p><strong>Phone:</strong> (713) 853-6309</p>
+            <p><strong>Email:</strong> echowellness.now@gmail.com</p>
+            <p><strong>Instagram:</strong> @echowellness.now</p>
+            <p><strong>TikTok:</strong> @echowellness.now</p>
+        </div>
+        <div class = "contact-form" id="form">
+            <form action="formhandler.php" method = "post">
+                <input type="text" name="name" placeholder = "Enter your name" required>
+                <input type="email" name="email" placeholder = "Enter email address" required>
+                <input type="text" name="subject" placeholder = "Enter your subject" required>
+                <br>
+                <textarea rows="6" name="message" placeholder="Enter your message" required></textarea>
+                <button type = "submit" id="submission">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="gap"></div>
+    <!-- FOOTER -->
+    <div id="footer">
+        <div id="footerContent">
+            <p><span class="bold">Contact Us!</span></p>
+            <p><span class="bold">Phone:</span> (713) 853-6309</p>
+            <p><span class="bold">Email:</span> echowellness.now@gmail.com</p>
+            <p><span class="bold">Instagram:</span> @echowellness.now</p>
+            <p><span class="bold">TikTok:</span> @echowellness.now</p>
+        </div>
+    </div>
 </body>
+
 
 </html>

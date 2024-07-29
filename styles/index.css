@@ -105,7 +105,6 @@
     font-family: 'Montserrat';
     font-size: 4.5vw;
     font-weight: 700;
-    line-height: 90%;
     color: var(--dark);
     margin-bottom: 20px;
     border-bottom: 2px solid var(--border);
@@ -133,7 +132,6 @@
     font-family: 'Montserrat';
     font-size: 4.5vw;
     font-weight: 700;
-    line-height: 90%;
     color: var(--dark);
     margin-bottom: 30px;
     padding-bottom: 10px;
@@ -205,7 +203,6 @@
     font-family: 'Montserrat';
     font-size: 4.5vw;
     font-weight: 700;
-    line-height: 90%;
     color: var(--dark);
     margin-bottom: 20px;
     border-bottom: 2px solid var(--border);
