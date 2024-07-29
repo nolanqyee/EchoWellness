@@ -103,7 +103,7 @@
 
 #missionText h1 {
     font-family: 'Montserrat';
-    font-size: min(60px,7vw);
+    font-size: 4.5vw;
     font-weight: 700;
     line-height: 90%;
     color: var(--dark);
@@ -113,7 +113,7 @@
 }
 
 #missionText p {
-    font-size: 20px;
+    font-size: 19px;
     margin:0;
     margin-bottom: 20px;
     opacity: .6;
@@ -131,7 +131,7 @@
 
 #impactHeading {
     font-family: 'Montserrat';
-    font-size: min(60px,7vw);
+    font-size: 4.5vw;
     font-weight: 700;
     line-height: 90%;
     color: var(--dark);
@@ -203,7 +203,7 @@
 
 #thisYearText h1 {
     font-family: 'Montserrat';
-    font-size: min(60px,7vw);
+    font-size: 4.5vw;
     font-weight: 700;
     line-height: 90%;
     color: var(--dark);
@@ -213,7 +213,7 @@
 }
 
 #thisYearText p {
-    font-size: 20px;
+    font-size: min(20px, 4vw);
     margin:0;
     margin-bottom: 20px;
     opacity: .6;
@@ -230,11 +230,63 @@
     cursor: pointer;
     color: var(--light);
     font-weight: 600;
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 10px;
     transition: 0.25s ease;
 }
 
 #donationButton:hover{
     transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 950px) {
+    #missionImageDiv, #missionText, #thisYearImageDiv, #thisYearText, #impact{
+        width: 85vw;
+        margin:auto;
+    }
+    #missionText {
+        margin-top: 50px;
+    }
+    #thisYearText {
+        margin-bottom: 50px;
+    }
+    #mission {
+        display: contents;
+    }
+    #missionText h1, #thisYearText h1, #impactHeading {
+        font-size: 45px;
+    }
+    #indexHeader div h1 {
+        font-size: 45px;
+    }
+    #missionText p, #thisYearText p {
+        font-size: 17px;
+    }
+
+    #thisYear {
+        display: contents;
+    }
+    .statHead {
+        font-size: 30px;
+    }
+    .statCaption {
+        font-size: 14px;
+    }
+    #indexHeaderImage {
+        display: none;
+    }
+    #indexHeader div p {
+        font-size: 17px;
+    }
+    #indexHeader {
+        height: 55vh;
+    }
+    #indexHeaderContent {
+        margin: auto;
+        text-align: center;
+    }
+    #indexHeaderText {
+        width: 85vw;
+        margin: auto;
+    }
 }

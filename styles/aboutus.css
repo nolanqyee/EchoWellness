@@ -38,7 +38,7 @@
 
 .aboutContent div {
     margin: auto;
-    width: max(80%, 800px);
+    width: 80%;
 }
 
 
@@ -192,4 +192,45 @@
     font-weight: 700;
     color: var(--accent);
     font-family: 'Montserrat';
+}
+
+@media only screen and (max-width: 950px) {
+    #aboutHeader {
+        height: 55vh;
+    }
+    #aboutHeader div h1 {
+        font-size: 45px
+    }
+    #aboutHeader div p {
+        font-size: 17px;
+    }
+    #aboutHeader div {
+        margin: auto;
+        width: 85vw;
+    }
+    .aboutContent div {
+        width: 85vw;
+        margin: auto;
+    }
+    .aboutContent div h1 {
+        font-size: 40px;
+        margin-bottom:15px;
+    }
+    .aboutContent div p {
+        font-size: 17px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        width: 85vw;
+        margin: auto;
+        padding: 0px;
+        gap: 5px;
+    }
+    #clickText {
+        display: none;
+    }
+    .caption {
+        margin-top: 10px;
+        font-size: 12px;
+    }
 }

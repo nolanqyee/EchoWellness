@@ -89,7 +89,7 @@ body {
     margin-right: 40px;
 }
 
-#navbar .nav-link, .nav-link {
+#navbar .nav-link, #burgerMenu a, #burgerMenu .nav-link {
     text-decoration: none;
     color:var(--dark);
     font-size: 18px;
@@ -106,6 +106,52 @@ body {
     transform:translate(0,-2px);
     opacity: 1;
 }
+
+#mobileNavbar{
+    display: none;
+    position: sticky;
+    z-index: 2;
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    border-bottom: 2px solid var(--transparent-border-color);
+    background: var(--light);
+    backdrop-filter: blur(8px);
+}
+
+
+#mobileNavbar img{
+}
+
+#burgerMenu{
+    position: fixed;
+    z-index: 1;
+    display: none;
+    justify-items: center;
+    align-content: center;
+    background: rgba(250,250,250,0.6);
+    backdrop-filter: blur(8px);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .25s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#burgerMenu a{
+    margin:0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    transition: .25s;
+}
+
+#burgerMenu a:hover{
+    transform:translate(0,-2px);
+}
+
 
 /* FOOTER */
 
@@ -171,3 +217,20 @@ body {
     margin-left: 80px;
 }
 
+@media only screen and (max-width: 950px) {
+    #navbar {
+        display: none;
+    }
+    #mobileNavbar {
+        display: flex;
+    } 
+    #burgerMenu{
+        display: grid;
+    }
+    .gap {
+        height: 10vh;
+    }
+    .smallGap {
+        height: 5vh;
+    }
+}

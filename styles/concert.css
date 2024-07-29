@@ -41,8 +41,8 @@
 }
 
 .concertContent div {
-    margin: auto;
     width: max(80%, 800px);
+    margin: auto;
 }
 
 .concertContent div h1 {
@@ -104,4 +104,24 @@
 
 .concert-photos {
     margin-top: 7vh;
+}
+
+@media only screen and (max-width: 950px) {
+    #concertHeader {
+        height: 55vh;
+    }
+    .concertContent div, #imageCarousel, #concertHeader div {
+        width: 85vw;
+        margin: auto;
+    }
+    .concertContent div h1, #imageCarousel h1 {
+        font-size: 45px;
+    }
+    #concertHeader div h1 {
+        font-size: 55px;
+    }
+    .concertContent div p, .concertContent div a, #imageCarousel p, #imageCarousel a, #concertHeader div p {
+        font-size: 17px;
+    }
+
 }

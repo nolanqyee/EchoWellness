@@ -15,7 +15,6 @@
     <!-- Animate on Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
     <link rel="icon" href="assets/branding/lightlogo.png">
 
 </head>
@@ -29,6 +28,19 @@
             <a class="nav-link" href="#" onclick="navigateTo('aboutus')">About Us</a>
             <a class="nav-link" href="#" onclick="navigateTo('contactus')">Contact Us</a>
         </div>
+    </div>
+
+    <!-- MOBILE NAVBAR -->
+    <div id="mobileNavbar">
+        <a class="logo" href="#" onclick="navigateTo('')"><img src="assets/branding/lightlogo2.png"></a>
+
+        <img id="burgerToggle" onclick="toggleBurgerMenu()" src="assets/menu.svg">
+    </div>
+
+    <div id="burgerMenu">
+        <a class="nav-link" href="#" onclick="navigateTo('concert')">Concert</a>
+        <a class="nav-link" href="#" onclick="navigateTo('aboutus')">About Us</a>
+        <a class="nav-link" href="#" onclick="navigateTo('contactus')">Contact Us</a>
     </div>
     
     <div data-aos="fade-in" data-aos-duration="700">
@@ -46,10 +58,10 @@
             </div>
         </div>
 
-        <div style="height: 10vh;"></div>
+        <div class="smallGap"></div>
         
         <!-- MISSION STATEMENT -->
-
+        
         <div id="mission" >
             <div id="missionImageDiv" data-aos="zoom-in-right" data-aos-duration="800">
                 <img src="assets/index/missionImage.jpg" id="missionImage">
@@ -60,7 +72,7 @@
             </div>
         </div>
 
-        <div style="height: 18vh;"></div>
+        <div class="gap"></div>
 
         <!-- IMPACT -->
         <div id="impact">
@@ -68,7 +80,7 @@
             <div id="statSection" data-aos="fade-up" data-aos-duration="800">
                 <div class="stat">
                     <h1 class="statHead">$14K+</h1>
-                    <p class="statCaption">raised for a local special needs school in 2023</p>
+                    <p class="statCaption">raised in 2023</p>
                 </div>
                 <div class="stat">
                     <h1 class="statHead">33</h1>
@@ -118,8 +130,28 @@
 
 <script src="scripts/dualhost.js"></script>
 <script src="scripts/header.js"></script>
+<script src="scripts/navbar.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
+    function updateAOS() {
+        const dtext = document.getElementById('thisYearText');
+        const dimage = document.getElementById('thisYearImageDiv');
+
+        if(window.innerWidth < 950) {
+            dtext.setAttribute('data-aos', 'fade-right');
+            dimage.setAttribute('data-aos', 'zoom-in-right');
+        } else {
+            dtext.setAttribute('data-aos', 'fade-left');
+            dimage.setAttribute('data-aos', 'zoom-in-left');
+        }
+
+        AOS.refresh();
+    }
+
+    window.onload = updateAOS;
+
+    window.onresize = updateAOS;
+
     AOS.init();
 </script>
 </html>

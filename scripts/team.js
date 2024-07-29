@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     gridItems.forEach((item, index) => {
         item.addEventListener('click', function() {
+            if(window.innerWidth < 950){
+                return;
+            }
+
             const imgSrc = item.querySelector('img').getAttribute('src');
             const caption = item.querySelector('.caption').textContent;
             const bios = [
