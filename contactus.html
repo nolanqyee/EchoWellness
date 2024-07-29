@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/dualhost.js"></script>
     <script src="scripts/navbar.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="icon" href="assets/branding/lightlogo.png">
 </head>
@@ -41,27 +42,30 @@
         <a class="nav-link" href="#" onclick="navigateTo('contactus')">Contact Us</a>
     </div>
 
-    <div id="contactDiv">
-        <div id="socials">
-            <h1>Contact Us!</h1>
-            <p>Feel free to send us an email, or contact us at any of the following socials:</p>
-            <p><strong>Phone:</strong> (713) 853-6309</p>
-            <p><strong>Email:</strong> echowellness.now@gmail.com</p>
-            <p><strong>Instagram:</strong> @echowellness.now</p>
-            <p><strong>TikTok:</strong> @echowellness.now</p>
+    <div data-aos="fade-in" data-aos-duration="700">
+        <div id="contactDiv">
+            <div id="socials" data-aos="fade-right" data-aos-duration="800">
+                <h1>Contact Us!</h1>
+                <p>Feel free to send us an email, or contact us at any of the following socials:</p>
+                <p><strong>Phone:</strong> (713) 853-6309</p>
+                <p><strong>Email:</strong> echowellness.now@gmail.com</p>
+                <p><strong>Instagram:</strong> @echowellness.now</p>
+                <p><strong>TikTok:</strong> @echowellness.now</p>
+            </div>
+            <div class = "contact-form" id="form" data-aos="fade-left" data-aos-duration="800">
+                <form action="formhandler.php" method = "post">
+                    <input type="text" name="name" placeholder = "Enter your name" required>
+                    <input type="email" name="email" placeholder = "Enter email address" required>
+                    <input type="text" name="subject" placeholder = "Enter your subject" required>
+                    <br>
+                    <textarea rows="6" name="message" placeholder="Enter your message" required></textarea>
+                    <button type = "submit" id="submission">Send Message</button>
+                </form>
+            </div>
         </div>
-        <div class = "contact-form" id="form">
-            <form action="formhandler.php" method = "post">
-                <input type="text" name="name" placeholder = "Enter your name" required>
-                <input type="email" name="email" placeholder = "Enter email address" required>
-                <input type="text" name="subject" placeholder = "Enter your subject" required>
-                <br>
-                <textarea rows="6" name="message" placeholder="Enter your message" required></textarea>
-                <button type = "submit" id="submission">Send Message</button>
-            </form>
-        </div>
+    
+    
     </div>
-
     
     <div class="gap"></div>
     <!-- FOOTER -->
@@ -76,5 +80,24 @@
     </div>
 </body>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    function updateAOS() {
+        const form = document.getElementById('form');
+        if(window.innerWidth < 950) {
+            form.setAttribute('data-aos', 'fade-right');
+        } else {
+            form.setAttribute('data-aos', 'fade-left');
+        }
 
+        AOS.refresh();
+    }
+
+    window.onload = updateAOS;
+
+    window.onresize = updateAOS;
+
+
+    AOS.init();
+</script>
 </html>
